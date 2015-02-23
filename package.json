@@ -1,9 +1,9 @@
 {
-	"name"			: "mead-todo".
-	"version"		: "0.0.0".
-	"description"	: "Simple todo application.".
-	"main"			: "server.js".
-	"author"		: "diggzhang".
+	"name"			: "mead-todo",
+	"version"		: "0.0.0",
+	"description"	: "Simple todo application.",
+	"main"			: "server.js",
+	"author"		: "diggzhang",
 	"dependencies"	: {
 		"express"	: "~4.7.2",	
 		"mongoose"	: "~3.6.2",	
