@@ -10,7 +10,7 @@
 	//configuration ======================
 
 	//connect to database
-	mongoose.connect('mongodb://diggzhang:diggzhang@proximus.modulusmongo.net:27017/quxoda9G');
+	mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');
 
 	app.use(express.static(__dirname + '/public'));
 	app.use(morgan('dev'));
@@ -77,6 +77,10 @@
         });
 
 
+	// application ------------------------
+	app.get('*', function(req, res){
+    	res.sendfile('./public/index.html');
+    });
 	//listen
 	app.listen(8080);
 	console.log("App listenning on port 8080");
