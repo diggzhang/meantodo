@@ -10,7 +10,8 @@
 	//configuration ======================
 
 	//connect to database
-	mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');
+	mongoose.connect('mongodb://diggzhang:diggzhang@proximus.modulusmongo.net:27017/quxoda9G');
+
 
 	app.use(express.static(__dirname + '/public'));
 	app.use(morgan('dev'));
