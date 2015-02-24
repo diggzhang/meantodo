@@ -2,7 +2,6 @@
 <html ng-app="scotchTodo">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
     
     <title>MeanTodo</title>
     
@@ -23,23 +22,24 @@
     </style>
     
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-    <script src="http://apps.bdimg.com/libs/angular.js/1.2.16/angular.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular.js/1.2.16/angular.min.js"></script>
+
     <script src="core.js"></script>
 </head>
 <body ng-controller="mainController">
     <div class="container">
         
         <div class="jumbotron text-center">
-            <h1>Todo-aholic<span class="label label-info">{{ todos.length }}</span></h1>
+            <h1>Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
         </div>
         
-        <!--        display all todos-->
+        <!--        display all todos as list-->
         <div id="todo-list" class="row">
             <div class="col-md-4 col-sm-offset-4">
                 
                 <div class="checkbox" ng-repeat="todo in todos">
                     <label for="">
-                        <input type="checkbox" ng-click="deleteTodo(todo._id)">
+                        <input type="checkbox" ng-click="deleteTodo(todo._id)">{{todo.text}}
                     </label>
                 </div>
             </div>
@@ -48,7 +48,7 @@
         <!--        create a todo -->
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <form action="">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control input-lg text-center" placeholder="I want more" ng-model="formData.text">
                     </div>

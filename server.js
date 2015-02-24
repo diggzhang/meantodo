@@ -10,8 +10,10 @@
 	//configuration ======================
 
 	//connect to database
-	mongoose.connect('mongodb://diggzhang:diggzhang@proximus.modulusmongo.net:27017/quxoda9G');
-
+	//mongoose.connect('mongodb://diggzhang:diggzhang@proximus.modulusmongo.net:27017/quxoda9G');
+mongoose.connect('mongodb://node:nodeuser@mongo.onmodulus.net:27017/uwO3mypu');
+//	mongoose.connect('mongodb://nodetest:nodenode@proximus.modulusmongo.net:27017/y4noDano');
+	//mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');
 
 	app.use(express.static(__dirname + '/public'));
 	app.use(morgan('dev'));
@@ -41,7 +43,7 @@
         });
 		
 		//create todo and send back all todos aftesr section
-		app.post('api/todos', function(req, res) {
+		app.post('/api/todos', function(req, res) {
             
             //Create todo, information comes from AJAX by angularjs
             Todo.create({
