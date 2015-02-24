@@ -19,7 +19,10 @@ Automatically restart server when files change: By default, node will not monito
 
 ##Add fronted routes
 
+##Setting Up Angular
+
 ##bug
 when I wanna post a todo
  Failed to load resource: the server responded with a status of 404 (Not Found)
 core.js:27 Error: Cannot POST /api/todos
+---->Cuz one character '/'
